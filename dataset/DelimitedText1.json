@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "test_data.csv",
+				"fileName": "api_data.csv",
 				"container": "bronzelayerdb"
 			},
 			"columnDelimiter": ",",
