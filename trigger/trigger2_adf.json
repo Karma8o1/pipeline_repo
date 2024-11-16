@@ -1,0 +1,24 @@
+{
+	"name": "trigger2_adf",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyPipeline_37c",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/dbtestdata/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/fbd29d49-7b22-4891-8be2-fd8ab568d0d4/resourceGroups/testing_dbricks/providers/Microsoft.Storage/storageAccounts/mnfdevstg",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
