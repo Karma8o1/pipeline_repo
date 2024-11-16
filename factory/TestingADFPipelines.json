@@ -1,0 +1,9 @@
+{
+	"name": "TestingADFPipelines",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "33cd95c2-377b-49d2-b03b-b12cf4d72208",
+		"tenantId": "bd48c717-65e2-451c-80ec-f5a8d7a01ed6"
+	}
+}
