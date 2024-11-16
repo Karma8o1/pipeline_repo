@@ -36,7 +36,172 @@
 							"fileExtension": ".txt"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['time']['updated']"
+								},
+								"sink": {
+									"name": "updated"
+								}
+							},
+							{
+								"source": {
+									"path": "$['time']['updatedISO']"
+								},
+								"sink": {
+									"name": "updatedISO"
+								}
+							},
+							{
+								"source": {
+									"path": "$['time']['updateduk']"
+								},
+								"sink": {
+									"name": "updateduk"
+								}
+							},
+							{
+								"source": {
+									"path": "$['disclaimer']"
+								},
+								"sink": {
+									"name": "disclaimer"
+								}
+							},
+							{
+								"source": {
+									"path": "$['chartName']"
+								},
+								"sink": {
+									"name": "chartName"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['USD']['code']"
+								},
+								"sink": {
+									"name": "bpi_USD_code"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['USD']['symbol']"
+								},
+								"sink": {
+									"name": "bpi_USD_symbol"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['USD']['rate']"
+								},
+								"sink": {
+									"name": "bpi_USD_rate"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['USD']['description']"
+								},
+								"sink": {
+									"name": "bpi_USD_description"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['USD']['rate_float']"
+								},
+								"sink": {
+									"name": "bpi_USD_rate_float"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['GBP']['code']"
+								},
+								"sink": {
+									"name": "bpi_GBP_code"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['GBP']['symbol']"
+								},
+								"sink": {
+									"name": "bpi_GBP_symbol"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['GBP']['rate']"
+								},
+								"sink": {
+									"name": "bpi_GBP_rate"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['GBP']['description']"
+								},
+								"sink": {
+									"name": "bpi_GBP_description"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['GBP']['rate_float']"
+								},
+								"sink": {
+									"name": "bpi_GBP_rate_float"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['EUR']['code']"
+								},
+								"sink": {
+									"name": "bpi_EUR_code"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['EUR']['symbol']"
+								},
+								"sink": {
+									"name": "bpi_EUR_symbol"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['EUR']['rate']"
+								},
+								"sink": {
+									"name": "bpi_EUR_rate"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['EUR']['description']"
+								},
+								"sink": {
+									"name": "bpi_EUR_description"
+								}
+							},
+							{
+								"source": {
+									"path": "$['bpi']['EUR']['rate_float']"
+								},
+								"sink": {
+									"name": "bpi_EUR_rate_float"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
