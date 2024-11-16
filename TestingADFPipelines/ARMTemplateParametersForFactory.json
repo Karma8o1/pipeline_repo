@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "TestingADFPipelines"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/fbd29d49-7b22-4891-8be2-fd8ab568d0d4/resourceGroups/testing_dbricks/providers/Microsoft.Storage/storageAccounts/mnfdevstg"
+		}
+	}
+}
