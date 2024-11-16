@@ -11,7 +11,7 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
-		"trigger1_properties_typeProperties_scope": {
+		"trigger2_adf_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/fbd29d49-7b22-4891-8be2-fd8ab568d0d4/resourceGroups/testing_dbricks/providers/Microsoft.Storage/storageAccounts/mnfdevstg"
 		}
@@ -211,7 +211,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/trigger1')]",
+			"name": "[concat(parameters('factoryName'), '/trigger2_adf')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -230,10 +230,9 @@
 				"typeProperties": {
 					"blobPathBeginsWith": "/dbtestdata/blobs/",
 					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('trigger1_properties_typeProperties_scope')]",
+					"scope": "[parameters('trigger2_adf_properties_typeProperties_scope')]",
 					"events": [
-						"Microsoft.Storage.BlobCreated",
-						"Microsoft.Storage.BlobDeleted"
+						"Microsoft.Storage.BlobCreated"
 					]
 				}
 			},
