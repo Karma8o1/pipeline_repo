@@ -28,7 +28,7 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
+							"recursive": false,
 							"wildcardFileName": "*.csv",
 							"enablePartitionDiscovery": false
 						},
@@ -75,7 +75,7 @@
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2024-11-16T14:28:13Z"
+		"lastPublishTime": "2024-11-16T16:01:50Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }
