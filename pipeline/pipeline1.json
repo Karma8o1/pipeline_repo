@@ -74,8 +74,7 @@
 			"containers_outside": {
 				"type": "Array",
 				"defaultValue": [
-					"audio1",
-					"audio2"
+					"[audio1,audio2]"
 				]
 			}
 		},
