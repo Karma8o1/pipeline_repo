@@ -6,19 +6,13 @@
 				"name": "ForEach1",
 				"type": "ForEach",
 				"dependsOn": [],
-				"userProperties": [
-					{
-						"name": "containers",
-						"value": ""
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@item",
+						"value": "@variables('containers_outside')",
 						"type": "Expression"
 					},
 					"isSequential": false,
-					"batchCount": 2,
 					"activities": [
 						{
 							"name": "Copy data1_copy1",
