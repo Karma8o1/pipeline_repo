@@ -5,11 +5,27 @@
 			"referenceName": "AzureBlobStorage2",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"container_name": {
+				"type": "String"
+			},
+			"file_name": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation"
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().file_name",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().container_name",
+					"type": "Expression"
+				}
 			}
 		}
 	}
