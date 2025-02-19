@@ -6,7 +6,12 @@
 				"name": "ForEach1",
 				"type": "ForEach",
 				"dependsOn": [],
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "containers",
+						"value": ""
+					}
+				],
 				"typeProperties": {
 					"items": {
 						"value": "@item",
